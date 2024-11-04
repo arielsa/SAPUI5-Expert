@@ -5,24 +5,11 @@
         <App id="app1">
             <pages>
                 <Page id="page1" title="{i18n>appTitle}">
+                    <headerContent>
+                        <Button id="asd" icon="sap-icon://action" press="onOpenHeader"></Button>
+                    </headerContent>
                     <content>
-                        <Panel id="panel1" headerText="{i18n>helloPanel}" 
-                                class="sapUiResponsiveMargin"
-                                width="auto">
-                            <content>
-                                                        
-                                <Button id="btn1" text="{i18n>showHelloButtonText}" 
-                                        class="sapUiSmallMarginEnd"
-                                        press=".onShowHello"/>
-                                
-                                <Input id="in01" value="{/recipient/name}"  
-                                    valueLiveUpdate="true"  description="" 
-                                    width="60%"/>
-                                    
-                                <Text id="text1" text="hello {/recipient/name}" class="sapUiSmallMargin boldElement sapthemeHighlight-asColor "/>
-                                
-                            </content>
-                        </Panel>
+                        <mvc:XMLView id="HPV1" viewName="logaligroup.sapui5.view.HelloPanel"></mvc:XMLView>
                     </content>
                 </Page>
             </pages>
