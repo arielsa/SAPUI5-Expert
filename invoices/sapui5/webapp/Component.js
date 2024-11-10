@@ -4,7 +4,7 @@ sap.ui.define(
         "sap/ui/core/UIComponent",
         "logaligroup/sapui5/model/Models",
         "sap/ui/model/resource/ResourceModel",
-        "./controller/heloDialog"
+        "./controller/helloDialog"
     ],
     /**
      * @param {typeof sap.ui.core.UIComponent} UIComponent
@@ -38,7 +38,7 @@ sap.ui.define(
                     this._helloDial.destroy();
                     delete this._helloDial
                 },
-                openHelloDialog : function (){
+                openHelloDialog : function (){//console.log("thissdf");
                     this._helloDial.open();
                 }
 

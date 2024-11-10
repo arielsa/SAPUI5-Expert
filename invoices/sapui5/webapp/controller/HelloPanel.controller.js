@@ -28,8 +28,8 @@ sap.ui.define(
                     //console.log(sRecipient);
                     MessageToast.show(sMsg);
                 },
-                onOpenDialog: function () {
-                    this.getOwnerComponent().openHelloDialog();
+                onOpenDialog: function () { //console.log(this.getOwnerComponent());
+                    this.getOwnerComponent().openHelloDialog();// console.log("this");
                 },
             }
         );

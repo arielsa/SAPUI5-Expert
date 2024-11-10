@@ -13,14 +13,15 @@ sap.ui.define(
         "use strict"
         return ManagedObject.extend("logaligroup.sapui5.controller.helloDialog", {
             constructor: function (oView) {
-                this._oView = oView;
+                this._oView = oView; 
+
             },
             exit: function () {
                 delete this._oView;
             },
-            open: function () {
-
-                const oView = this._oView();
+            open: function () { 
+                
+                const oView = this._oView;// console.log(this);
 
                 if (! oView.byId("helloDialog")) {
 
