@@ -39,7 +39,7 @@ sap.ui.define(
                 };
                 const oList = this.byId("invoiceList");
                 const oBinding = oList.getBinding("items");
-                console.log(oBinding);
+                //console.log(oBinding);
                 oBinding.filter(aFilter);
             }
           }  
