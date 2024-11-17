@@ -10,6 +10,7 @@
                     </headerContent>
                     <content>
                         <mvc:XMLView id="HPV1" viewName="logaligroup.sapui5.view.HelloPanel"></mvc:XMLView>
+                        <mvc:XMLView id="HPV2" viewName="logaligroup.sapui5.view.InvoicesList"></mvc:XMLView>
                     </content>
                 </Page>
             </pages>
